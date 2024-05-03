@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script> -->
+</head>
+<body>
+ 
+    <header class="mobile-header">
+       
+            <div class="container">
+                <div class="mobileheader-upside">
+                    <button class="menubutton"> <i class="fa-solid fa-bars fa-2xl" style="color: #ffff;"></i> </button>
+                    <div class="mobileheader-logobox">
+                        <a href=""><img src="./image/logo/logo.webp" alt=""></a>
+                    </div>
+                </div>
+                
+                <div class="mobileheader-downside">
+                    <button class="search mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
+                    <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
+                    <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
+
+                    
+                    <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #A8741A;"></i> </span> </button>
+                   
+                    
+                </div>
+            </div>
+          
+    </header>
+
+    <header class="tablet-header">
+        <div class="container tabletheadercontainer">
+            <div class="tabletheader-left">
+                <button class="menubutton"> <i class="fa-solid fa-bars fa-2xl" style="color: #ffff;"></i> </button>
+                <div class="mobileheader-logobox">
+                    <a href=""><img src="./image/logo/logo.webp" alt=""></a>
+                </div>
+            </div>
+            
+            <div class="tabletheader-right">
+                <button class="search mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
+                <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
+                <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
+                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #A8741A;"></i> </span> </button>
+            </div>
+        </div>
+    </header>
+
+    <header class="desktop-header">
+        <div class="container desktopheadercontainer">
+            <a class="desktoplogo" href=""><img src="./image/logo/logo.webp" alt=""></a>
+            <ul class="main-menu">
+                <li class="main-page"><a class="mainpage-link" href="">Home</a></li>
+                <li class="main-page"><a href="">Shop</a></li>
+                <li class="main-page"><a href="">Blog</a></li>
+                <li class="mainpage-sub">Pages <i class="fa-solid fa-chevron-down fa-2xs ddd" style="color: #ffff;"></i>
+                    <ul class="sub-menu">
+                        <li  class="altpages"><a href="">About</a></li>
+                        <li  class="altpages"><a href="">Faq</a></li>
+                        <li  class="altpages"><a href="">Contact</a></li>
+                        <li  class="altpages"><a href="">Login</a></li>
+                        <li  class="altpages"><a href="">Register</a></li>
+                        <li  class="altpages"><a href="">Cart</a></li>
+                        <li  class="altpages"><a href="">Wishlist</a></li>
+                        <li  class="altpages"><a href="">Cehckout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="desktopheader-right">
+                <button class="search mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
+                <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
+                <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
+                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #A8741A;"></i> </span> </button>
+            </div>
+        </div>
+    </header> 
+
+    <!-- <div class="menucontainer">
+        <div class="menucontainerupper">
+            <button class="closebutton"><img src="./image/icons/close.svg" alt=""></button>
+            <nav>
+                <ul class="menulist">
+                    <li class="menubox"><a href="">Home</a></li>
+                    <li class="menubox"><a href="">Shop</a></li>
+                    <li class="menubox"><a href="">AAA</a></li>
+                    <li class="menubox"><a href="">BBB</a></li>
+                    <li class="menubox"><a href="">CCC</a></li>
+                    <li class="menubox pagebox"><a href="">Page</a><img src="./image/icons/right.svg" alt=""></li>
+                </ul>
+                <ul class="pagelist">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Faq</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menucontainerbelow">
+            <div class="logincontainer">
+                <img src="./image/icons/user.svg" alt="">
+                <a href="">Log In</a>
+            </div>
+            <div class="menusocialmedias">
+                <a class="media" href=""><img src="./image/icons/x.svg"></a>
+                <a class="media" href=""><img src="./image/icons/facebook.svg"></a>
+                <a class="media" href=""><img src="./image/icons/printerest.svg"></a>
+                <a class="media" href=""><img src="./image/icons/instagram.svg"></a>
+            </div>
+        </div>
+    </div> -->
+    
+
+    <script src="./js/homepage.js"></script>
+</body>
+</html>

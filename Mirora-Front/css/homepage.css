@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile-header {
+  padding: 1rem 0;
+  background-color: #242424;
+}
+.mobile-header .mobileheader-upside {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.mobile-header .mobileheader-upside .menubutton {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.mobile-header .mobileheader-upside .mobileheader-logobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-header .mobileheader-upside .mobileheader-logobox a {
+  height: 50px;
+}
+.mobile-header .mobileheader-upside .mobileheader-logobox a img {
+  height: 100%;
+}
+.mobile-header .mobileheader-downside {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.mobile-header .mobileheader-downside .mobileheader-button {
+  width: 45px;
+  background-color: transparent;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #323232;
+  box-shadow: none;
+  border-radius: 3px;
+}
+.mobile-header .mobileheader-downside .cart {
+  height: 45px;
+  display: flex;
+  border: 1px solid #323232;
+  box-shadow: none;
+  border-radius: 3px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  position: relative;
+}
+.mobile-header .mobileheader-downside .cart .countbox {
+  position: absolute;
+  left: 0;
+  transform: translate(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #A8741A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-header .mobileheader-downside .cart .countbox .count {
+  color: #fff;
+  line-height: 26px;
+  font-size: 12px;
+}
+.mobile-header .mobileheader-downside .cart .cartbuttondiv {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem 0 0;
+  border-right: 1px solid #323232;
+}
+.mobile-header .mobileheader-downside .cart .totalprice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  margin-left: 0.8rem;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.tablet-header {
+  padding: 1rem 0;
+  display: none;
+  background-color: #242424;
+}
+.tablet-header .tabletheadercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.tablet-header .tabletheadercontainer .tabletheader-left {
+  display: flex;
+  gap: 1rem;
+}
+.tablet-header .tabletheadercontainer .tabletheader-left .menubutton {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.tablet-header .tabletheadercontainer .tabletheader-left .mobileheader-logobox {
+  display: flex;
+  align-items: center;
+}
+.tablet-header .tabletheadercontainer .tabletheader-left .mobileheader-logobox a {
+  height: 50px;
+}
+.tablet-header .tabletheadercontainer .tabletheader-left .mobileheader-logobox a img {
+  height: 100%;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right .mobileheader-button {
+  width: 45px;
+  background-color: transparent;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #323232;
+  box-shadow: none;
+  border-radius: 3px;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right .cart {
+  height: 45px;
+  display: flex;
+  border: 1px solid #323232;
+  box-shadow: none;
+  border-radius: 3px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  position: relative;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right .cart .countbox {
+  position: absolute;
+  left: 0;
+  transform: translate(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #A8741A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right .cart .countbox .count {
+  color: #fff;
+  line-height: 26px;
+  font-size: 12px;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right .cart .cartbuttondiv {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem 0 0;
+  border-right: 1px solid #323232;
+}
+.tablet-header .tabletheadercontainer .tabletheader-right .cart .totalprice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  margin-left: 0.8rem;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.desktop-header {
+  display: none;
+  padding: 2rem 0;
+  background-color: #242424;
+}
+.desktop-header .desktopheadercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.desktop-header .desktopheadercontainer .main-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.desktop-header .desktopheadercontainer .main-menu .main-page {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: inherit;
+  transition: 0.3s linear;
+}
+.desktop-header .desktopheadercontainer .main-menu .main-page:hover {
+  color: #A8741A;
+}
+.desktop-header .desktopheadercontainer .main-menu .main-page .sub-menu {
+  display: none;
+}
+.desktop-header .desktopheadercontainer .main-menu .mainpage-sub {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: inherit;
+  transition: 0.3s linear;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.desktop-header .desktopheadercontainer .main-menu .mainpage-sub .sub-menu {
+  width: 80px;
+  height: 500px;
+  background-color: red;
+  position: absolute;
+  display: none;
+  margin-top: 621px;
+}
+.desktop-header .desktopheadercontainer .main-menu .mainpage-sub:hover .sub-menu {
+  display: block;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right .mobileheader-button {
+  width: 45px;
+  background-color: transparent;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #323232;
+  box-shadow: none;
+  border-radius: 3px;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right .cart {
+  height: 45px;
+  display: flex;
+  border: 1px solid #323232;
+  box-shadow: none;
+  border-radius: 3px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  position: relative;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right .cart .countbox {
+  position: absolute;
+  left: 0;
+  transform: translate(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #A8741A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right .cart .countbox .count {
+  color: #fff;
+  line-height: 26px;
+  font-size: 12px;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right .cart .cartbuttondiv {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem 0 0;
+  border-right: 1px solid #323232;
+}
+.desktop-header .desktopheadercontainer .desktopheader-right .cart .totalprice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  margin-left: 0.8rem;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .tablet-header {
+    display: block;
+  }
+  .desktop-header {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .tablet-header {
+    display: none;
+  }
+  .desktop-header {
+    display: block;
+  }
+}/*# sourceMappingURL=homepage.css.map */
