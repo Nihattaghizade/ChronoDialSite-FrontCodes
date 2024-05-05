@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script>
+    <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: '#da373d',
-            }
+            },
+            screens: {
+                'tt': '576px',
+        
+                'nk': '992px',
+            },
           }
         }
       }
-    </script> -->
+    </script>
+
+    
 </head>
 <body>
  
@@ -32,14 +44,11 @@
                 </div>
                 
                 <div class="mobileheader-downside">
-                    <button class="search mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
+                    <button class="searchButton mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
                     <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
-                    <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
-
+                    <!-- <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a> -->
                     
-                    <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #A8741A;"></i> </span> </button>
-                   
-                    
+                    <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button>
                 </div>
             </div>
           
@@ -55,10 +64,10 @@
             </div>
             
             <div class="tabletheader-right">
-                <button class="search mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
+                <button class="searchButton mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
-                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #A8741A;"></i> </span> </button>
+                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button>
             </div>
         </div>
     </header>
@@ -70,7 +79,7 @@
                 <li class="main-page"><a class="mainpage-link" href="">Home</a></li>
                 <li class="main-page"><a href="">Shop</a></li>
                 <li class="main-page"><a href="">Blog</a></li>
-                <li class="mainpage-sub">Pages <i class="fa-solid fa-chevron-down fa-2xs ddd" style="color: #ffff;"></i>
+                <li class="mainpage-sub"> <a class="mainpagesub-item" href="">Pages</a> <i class="mainpagesub-item fa-solid fa-chevron-down fa-2xs" ></i>
                     <ul class="sub-menu">
                         <li  class="altpages"><a href="">About</a></li>
                         <li  class="altpages"><a href="">Faq</a></li>
@@ -79,54 +88,426 @@
                         <li  class="altpages"><a href="">Register</a></li>
                         <li  class="altpages"><a href="">Cart</a></li>
                         <li  class="altpages"><a href="">Wishlist</a></li>
-                        <li  class="altpages"><a href="">Cehckout</a></li>
+                        <!-- <li  class="altpages"><a href="">Cehckout</a></li> -->
                     </ul>
                 </li>
             </ul>
             <div class="desktopheader-right">
-                <button class="search mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
+                <button class="searchButton mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
-                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #A8741A;"></i> </span> </button>
+                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button>
             </div>
         </div>
     </header> 
 
-    <!-- <div class="menucontainer">
+    <div class="menucontainer hidden">
         <div class="menucontainerupper">
-            <button class="closebutton"><img src="./image/icons/close.svg" alt=""></button>
+            <button class="menuCloseButton"> <i class="fa-solid fa-x fa-lg" style="color: #ffffff;"></i> </button>
             <nav>
                 <ul class="menulist">
                     <li class="menubox"><a href="">Home</a></li>
                     <li class="menubox"><a href="">Shop</a></li>
-                    <li class="menubox"><a href="">AAA</a></li>
-                    <li class="menubox"><a href="">BBB</a></li>
-                    <li class="menubox"><a href="">CCC</a></li>
-                    <li class="menubox pagebox"><a href="">Page</a><img src="./image/icons/right.svg" alt=""></li>
+                    <li class="menubox"><a href="">Blog</a></li>
+                    <li class="menubox pagebox"> <p class="pageword">Page</p> <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i> </li>
                 </ul>
-                <ul class="pagelist">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Faq</a></li>
-                    <li><a href="">Contact Us</a></li>
+                <ul class="pagelist hidden">
+                    <li class="pagebox"> <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i> <p class="pageword">Page</p> </li>
+                    <li class="pagelistbox"><a href="">About</a></li>
+                    <li class="pagelistbox"><a href="">Faq</a></li>
+                    <li class="pagelistbox"><a href="">Contact Us</a></li>
+                    <li class="pagelistbox"><a href="">Login</a></li>
+                    <li class="pagelistbox"><a href="">Register</a></li>
+                    <li class="pagelistbox"><a href="">Wishlist</a></li>
+                    <li class="pagelistbox"><a href="">Cart</a></li>
                 </ul>
             </nav>
         </div>
         <div class="menucontainerbelow">
-            <div class="logincontainer">
-                <img src="./image/icons/user.svg" alt="">
-                <a href="">Log In</a>
+            <a style="color: #ffffff;" href=""> <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i> Log In</a>
+        </div>
+    </div>
+    
+    <div class="searchsection hidden">
+        <div class="searchcontainer">
+            <div class="inputcontainer">
+                <input type="text" placeholder="Search">
+                <button> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
             </div>
-            <div class="menusocialmedias">
-                <a class="media" href=""><img src="./image/icons/x.svg"></a>
-                <a class="media" href=""><img src="./image/icons/facebook.svg"></a>
-                <a class="media" href=""><img src="./image/icons/printerest.svg"></a>
-                <a class="media" href=""><img src="./image/icons/instagram.svg"></a>
+
+            <button class="searchCloseButton"> <i class="fa-solid fa-x fa-lg" style="color: #ffffff;"></i> </button>
+        </div>
+    </div>
+
+    <section class="homeslidesection">
+        <div class="swiper mySwiper" id="slidecontainer">
+            <div class="swiper-wrapper" id="slideinfocontainer">
+              <div class="swiper-slide eachslide">
+                <div class="eachslideinfo">
+                    <!-- <p class="discountinfo">Exclusive Offer -20% Off This Week</p> -->
+                    <h1 class="slidehead">An Extraordinary Classic</h1>
+                    <h5 class="slideinfo">Ultrices in iaculis nunc sed augue lacus viverra vitae. Ut placerat orci nulla pellentesque dignissim.</h3>
+                    <!-- <p class="pricetext">Starting At <span class="price">$1499.00</span></p> -->
+                    <a href="">Shop Now</a>
+                </div>
+                <img src="./image/homeslider/homesliderimage2.webp" alt="">
+              </div>
+              <div class="swiper-slide eachslide">
+                <div class="eachslideinfo">
+                    <!-- <p class="discountinfo">Exclusive Offer -20% Off This Week</p> -->
+                    <h1 class="slidehead">The Watch Everyone Desire</h1>
+                    <h5 class="slideinfo">Pretium nibh ipsum consequat nisl vel. Convallis convallis tellus id interdum veli sit erica ipsum dicar.</h3>
+                    <!-- <p class="pricetext">Starting At <span class="price">$1499.00</span></p> -->
+                    <a href="">Shop Now</a>
+                </div>
+                <img src="./image/homeslider/homesliderimage1.webp" alt="">
+              </div>
+              <!-- <div class="swiper-slide eachslide">
+                <div class="eachslideinfo">
+                    <p class="discountinfo">Exclusive Offer -20% Off This Week</p>
+                    <h1 class="markaname">U-Boat Classico</h1>
+                    <h5 class="markainfo"> U-Boat watches are a lot like classic American Muscle cars - expect for the American part that is.</h3>
+                    <p class="pricetext">Starting At <span class="price">$1499.00</span></p>
+                    <a href="">Shop Now</a>
+                </div>
+                <img src="./image/homeslider/homesliderimage3.webp" alt="">
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
+    <section class="productcategorysection">
+        <div class="container">
+            <p>ONE STEP AHEAD WITH THE RIGHT TIME.</p>
+            <h1><span>Wear</span> And <span>Feel</span> It</h1>
+            <div class="category-container">
+                <div class="categorycontainer-selection">
+                    <div class="eachcategory" id="box1">Classic</div>
+                    <div class="eachcategory" id="box2">Sport</div>
+                </div>
+            </div>
+            
+            <div class="result-container">
+                <div class="row eachcategory-productcontainer" id="productcontainerfirst">
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row eachcategory-productcontainer hidden" id="productcontainersecond">
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage2.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage2.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage2.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage2.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage2.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="eachproduct col-12 col-sm-6 col-lg-4">
+                        <div class="imgbox"><img src="./image/product/productimage2.webp" alt=""></div>
+                        <div class="productinfobox">
+                            <h3><a href="">Tommy Bahana</a></h3>
+                            <div class="productfeatures">
+                                <div class="ratingcon">
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                                </div>
+                                <div class="pricebox">
+                                    <div class="disocuntedprice">$100.00</div>
+                                    <del class="oldprice">$125.00</del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productfunctions">
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-eye""></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                            <a href=""><div class="iconbox"><i class="fa-regular fa-heart"></i></div></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
-    
+    </section>
 
+    <div class="mirt"></div>
+
+    <section class="numberdialsection">
+        <div class="container">
+            <p>How do you feel?</p>
+            <h1>Types Of <span>Dials</span></h1>
+            <div class="swiper mySwiper numberDialSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./image/numberdial/numberdial1.webp" alt=""></div>
+                  <div class="swiper-slide"><img src="./image/numberdial/numberdial2.webp" alt=""></div>
+                  <div class="swiper-slide"><img src="./image/numberdial/numberdial3.webp" alt=""></div>
+                  <div class="swiper-slide"><img src="./image/numberdial/numberdial4.webp" alt=""></div>
+                  <div class="swiper-slide"><img src="./image/numberdial/numberdial5.webp" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./js/homepage.js"></script>
 </body>
 </html>
