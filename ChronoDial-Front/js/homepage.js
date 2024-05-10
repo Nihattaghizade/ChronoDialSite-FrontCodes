@@ -80,15 +80,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
     boxes.forEach(function(box, index) {
         box.addEventListener("click", function() {
-            // Hide all product containers
-            productContainers.forEach(function(container) {
+             productContainers.forEach(function(container) {
                 container.classList.add("hidden");
             });
             
-            // Show the corresponding product container
             productContainers[index].classList.remove("hidden");
         });
     });
 });
 
-  
+var swiper = new Swiper(".newproductcontainer", {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      }
+    },
+  });
+
+  var swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    // If you need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
