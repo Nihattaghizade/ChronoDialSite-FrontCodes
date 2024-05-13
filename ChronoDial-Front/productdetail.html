@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/productdetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+          screens: {
+            'sm': '576px',
+            //'md': '768px',
+            'lg': '992px',
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    
+    <section class="breadcrumbsection">
+        <div class="breadcrumbcontainer">
+            <div class="breadcrumbinfo">
+                <h1>Product</h1>
+                <p> <a href="">Home</a> / <span>Shop</span> </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="detailuppersection grid grid-cols-1 lg:grid-cols-2">
+        <div class="img-slidecontainer">
+            <div class="imgcontainer"><img src="./image/product/productimage.webp" alt=""></div>
+            <div class="slidercontainer"></div>
+        </div>
+        <div class="productinfocontainer">
+            <h1 class="productname">Chronograph Watch</h1>
+            <p class="productdescription">In daily life, watches are more significant. Watches are available in a wide variety of styles for both men and women. That makes it simple to see the time. Also,...</p>
+            <div class="ratingcontainer">
+                <div class="productrating">
+                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                    <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                    <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                </div>
+                <p> <span>4</span> reviews</p>
+            </div>
+            <div class="productfeaturescontainer">
+                <div class="pricecontainer eachfeature">
+                    <p class="featureleftword">Price</p>
+                    <div class="productpricecontainer grid">
+                        <div class="disocuntedprice">$100.00</div>
+                        <del class="oldprice">$125.00</del>
+                    </div>
+                </div>
+                <div class="sizecontainer eachfeature">
+                    <p class="featureleftword">Size</p>
+                    <div class="productsizecontainer grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="sizecon featurebox">16mm</div>
+                        <div class="sizecon featurebox">20mm</div>
+                        <div class="sizecon featurebox">24mm</div>
+                        <div class="sizecon featurebox">28mm</div>
+                        <div class="sizecon featurebox">32mm</div>
+                        <div class="sizecon featurebox">36mm</div>
+                        <div class="sizecon featurebox">40mm</div>
+                        <div class="sizecon featurebox">44mm</div>
+                    </div>
+                </div>
+                <div class="bandcontainer eachfeature">
+                    <p class="featureleftword">Band Material</p>
+                    <div class="productbandcontainer grid grid-cols-1 gap-1 lg:grid-cols-2">
+                        <div class="bandcon featurebox">Leather</div>
+                        <div class="bandcon featurebox">Stainless Steel</div>
+                    </div>
+                </div>
+                <div class="vendorcontainer eachfeature">
+                    <p class="featureleftword">Vendor</p>
+                    <span>Elgun</span>
+                </div>
+                <div class="quantitycontainer eachfeature">
+                    <p class="featureleftword">Quantity</p>
+                    <div class="inputcontainer">
+                        <button class="inc-decbtn"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" name="" id="" value="0">
+                        <button class="inc-decbtn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mainbuttoncontainer">
+                <button><div>Add To Cart</div></button>
+                <button><div>Add To Wishlist</div></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="costumerreviewsection">
+        <div class="reviewinformationcontainer">
+            <h1>Costumer Reviews</h1>
+            <div class="reviewinformationinner">
+                <div class="rating-reviewinfocontainer">
+                    <div class="ratinginfo">
+                        <div class="ratingcon">
+                            <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                            <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                            <i class="fa-solid fa-star" style="color: #cbba9c;"></i>
+                            <i class="fa-solid fa-star" style="color: #d9d9d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #fff;"></i>
+                        </div>
+                        <p><span>4</span>out of <span>5</span></p>
+                    </div>
+                    <p>Based on <span>4</span> reviews</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+</body>
+</html>

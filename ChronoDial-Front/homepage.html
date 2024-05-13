@@ -21,8 +21,10 @@
             },
           },
           screens: {
-                'sm': '576px',
-                'lg': '992px',
+            'sm': '576px',
+            //'md': '768px',
+            'lg': '992px',
+            //'xl': '1200px',
           }
         }
       }
@@ -31,7 +33,8 @@
     
 </head>
 <body>
- 
+    
+    <!-- HeaderStart -->
     <header class="mobile-header">
        
             <div class="container">
@@ -47,7 +50,8 @@
                     <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
                     <!-- <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a> -->
                     
-                    <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button>
+                    <!-- <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button> -->
+                    <button class="mobileheader-button cart-button"> <i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i> </button>
                 </div>
             </div>
           
@@ -66,7 +70,8 @@
                 <button class="searchButton mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
-                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button>
+                <!-- <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button> -->
+                <button class="mobileheader-button cart-button"> <i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i> </button>
             </div>
         </div>
     </header>
@@ -76,7 +81,7 @@
             <a class="desktoplogo" href=""><img src="./image/logo/chronodiallogo.webp" alt=""></a>
             <ul class="main-menu">
                 <li class="main-page"><a class="mainpage-link" href="">Home</a></li>
-                <li class="main-page"><a href="">Shop</a></li>
+                <li class="main-page"><a href="./shoppage.html">Shop</a></li>
                 <li class="main-page"><a href="">Blog</a></li>
                 <li class="mainpage-sub"> <a class="mainpagesub-item" href="">Pages</a> <i class="mainpagesub-item fa-solid fa-chevron-down fa-2xs" ></i>
                     <ul class="sub-menu">
@@ -95,7 +100,8 @@
                 <button class="searchButton mobileheader-button"> <i class="fa-solid fa-magnifying-glass" style="color: #ffff;"></i> </button>
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-heart" style="color: #ffffff;"></i> </a> 
                 <a href="" class="mobileheader-button"> <i class="fa-solid fa-user" style="color: #ffffff;"></i> </a>
-                <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button>
+                <!-- <button class="cart"> <div class="countbox"> <span class="count">1</span> </div> <div class="cartbuttondiv"><i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i></div> <span class="totalprice"> $110.00  <i class="fa-solid fa-chevron-down fa-2xs" style="color: #cbba9c;"></i> </span> </button> -->
+                <button class="mobileheader-button cart-button"> <i class="fa-solid fa-cart-shopping" style="color: #ffff;"></i> </button>
             </div>
         </div>
     </header> 
@@ -170,6 +176,92 @@
             </div>
         </div>
     </div>
+
+    <div class="basketcontainer hidden">
+        <div class="basketcontainerupper">
+            <p>Your Cart</p>
+            <button class="basketCloseButton"> <i class="fa-solid fa-x fa-lg" style="color: #000;"></i> </button>
+        </div>
+        <div class="basketmaincontainer">
+            <div class="eachbasketproduct">
+                <div class="imagebox">
+                    <img src="./image/product/productimage2.webp" alt="">
+                </div>
+                <div class="infobox">
+                    <h3 class="productname"><a href="">Swiss Watch</a></h3>
+                    <div class="info">
+                        <p>Color: <span>Gold</span></p>
+                        <p>Size: <span>36mm</span></p>
+                        <p>Material: <span>Silicone</span></p>
+                    </div>
+                    <p class="productprice">$859.33</p>
+                    <div class="inputcontainer">
+                        <div class="countcontainer">
+                            <button class="inc-decbtn"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="" id="" value="0">
+                            <button class="inc-decbtn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="trash"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="eachbasketproduct">
+                <div class="imagebox">
+                    <img src="./image/product/productimage2.webp" alt="">
+                </div>
+                <div class="infobox">
+                    <h3 class="productname"><a href="">Swiss Watch</a></h3>
+                    <div class="info">
+                        <p>Color: <span>Gold</span></p>
+                        <p>Size: <span>36mm</span></p>
+                        <p>Material: <span>Silicone</span></p>
+                    </div>
+                    <p class="productprice">$859.33</p>
+                    <div class="inputcontainer">
+                        <div class="countcontainer">
+                            <button class="inc-decbtn"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="" id="" value="0">
+                            <button class="inc-decbtn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="trash"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="eachbasketproduct">
+                <div class="imagebox">
+                    <img src="./image/product/productimage2.webp" alt="">
+                </div>
+                <div class="infobox">
+                    <h3 class="productname"><a href="">Swiss Watch</a></h3>
+                    <div class="info">
+                        <p>Color: <span>Gold</span></p>
+                        <p>Size: <span>36mm</span></p>
+                        <p>Material: <span>Silicone</span></p>
+                    </div>
+                    <p class="productprice">$859.33</p>
+                    <div class="inputcontainer">
+                        <div class="countcontainer">
+                            <button class="inc-decbtn"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="" id="" value="0">
+                            <button class="inc-decbtn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="trash"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basketcontainerbelow">
+            <div class="subtotalcon">
+                <p>Subtotal:</p>
+                <span>$1234.65</span>
+            </div>
+            <div class="buttoncon">
+                <button><div>View Cart</div></button>
+                <button><div>Check Out</div></button>
+            </div>
+        </div>
+    </div>
+    <!-- HeaderEnd -->
 
     <section class="homeslidesection">
         <div class="swiper mySwiper" id="slidecontainer">
@@ -785,6 +877,7 @@
         </div>
     </section>
 
+    <!-- FooterStart -->
     <footer>
         <div class="container grid grid-cols-1 gap-6 lg:grid-cols-3">
             <div class="contactuscontainer">
@@ -812,9 +905,11 @@
             </div>
         </div>
     </footer>
+    <!-- FooterEnd -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <script src="./js/homepage.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

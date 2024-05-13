@@ -1,0 +1,307 @@
+@import '../css/main.scss';
+
+.breadcrumbsection{
+
+    .breadcrumbcontainer{
+        padding: 8rem 0;
+        background-image: url('../image/breadcrumbbackgroundimg/breadcrumbimg.webp');
+        width: 100%;
+        background-attachment: fixed;
+        position: relative;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .breadcrumbinfo{
+            h1{
+                font-size: 3.2rem;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            p{
+                font-size: 1rem;
+                color: #fff;
+                text-align: center;
+
+                a{
+                    transition: 0.3s ease;
+                    &:hover{
+                        color: #cbba9c;
+                    }
+                }
+            }
+        }
+    }
+}
+.ccc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+
+    .thead {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .product {
+            width: 55%;
+        }
+
+        .quantity {
+            width: 20%;
+        }
+
+        .total {
+            width: 15%;
+            text-align: end;
+        }
+
+        .headrow {
+            font-weight: 700;
+            font-size: 1.6rem;
+            font-family: inherit;
+        }
+
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    .tbody {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 50px;
+        // background-color: red;
+        .productside {
+            margin-top: 30px;
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // background-color: yellow;
+            .imgside {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .infoside {
+                width: 70%;
+                height: auto;
+                // background-color: aqua;
+                text-align: start;
+                line-height: 25px;
+
+                .brend {
+                    font-size: 1rem;
+                    margin: 0;
+                    padding: 0;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: inherit;
+                    line-height: 2rem;
+                }
+
+                .name {
+                    font-size: 1.6rem;
+                    margin: 0;
+                    padding: 0;
+                    font-family: inherit;
+                    font-weight: bolder;
+                    cursor: pointer;
+                    transition: 0.1s linear;
+
+                    &:hover {
+                        color: #CBBA9C;
+                        transition: 0.1s linear;
+                    }
+                }
+
+                .price {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+                .size {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+                .color {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+            }
+        }
+
+        .quantityside {
+            // background-color: aqua;
+            margin: 30px;
+            width: 25%;
+            display: flex;
+            align-items: center;
+
+            .count {
+                width: 50%;
+
+                // background-color: red;
+                span {
+                    padding: 10px;
+                    border: 1px solid #E8E8E8;
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        padding: 10px 15px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .trash {
+                // background-color: yellow;
+                margin-left: 15px;
+
+                i {
+                    padding: 10px;
+                    margin-left: 15px;
+                    border: 2px solid #CBBA9C;
+                    color: #CBBA9C;
+                    transition: 0.1s linear;
+
+                    &:hover {
+                        background-color: #CBBA9C;
+                        color: #fff;
+                        transition: 0.1s linear;
+                    }
+                }
+            }
+        }
+
+        .totalside {
+            margin-top: 30px;
+            width: 15%;
+            text-align: end;
+        }
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+    .tbody {
+        .quantityside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between !important;
+            height: 15vh;
+
+            // background-color: red;
+            .count {
+                width: 100% !important;
+
+                display: flex;
+                justify-content: center;
+            }
+
+            .trash {
+                // background-color: yellow;
+                width: 100%;
+
+                margin: 0 !important;
+                display: flex;
+                justify-content: center;
+
+                i {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+
+    .thead {
+        .total {
+            display: none;
+        }
+
+        .quantity {
+            display: none;
+        }
+    }
+
+    .tbody {
+        flex-direction: column;
+        .productside {
+            flex-direction: column;
+
+            .imgside {
+                width: 100%;
+                background-color: red;
+                width: 100% !important;
+            }
+
+            .infoside {
+                width: 100% !important;
+                text-align: center !important;
+
+                .name {
+                    font-size: 1rem !important;
+                }
+
+                .brend {
+                    font-size: 0.8rem !important;
+                }
+
+                .price {
+                    font-size: 0.8rem !important;
+                }
+
+                .color {
+                    font-size: 0.8rem !important;
+                }
+
+                .material {
+                    font-size: 0.8rem !important;
+                }
+
+                .size {
+                    font-size: 0.8rem !important;
+                }
+
+            }
+        }
+
+
+        .totalside{
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: start !important;
+            span{
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.material {
+    font-size: 1.2rem;
+    font-weight: 400;
+}

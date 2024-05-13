@@ -1,9 +1,9 @@
 "use strict";
 
-// Get all elements with class 'eachfilterinnercontainer'
+const sortBtn = document.querySelector(".sortcontainer");
+const sortsContainer = document.querySelector(".allsortlist");
 var filterContainers = document.querySelectorAll('.eachfilterinnercontainer');
 
-// Add click event listener to each filter container
 filterContainers.forEach(function(container) {
     container.addEventListener('click', function() {
         // Toggle the class 'active' on the next sibling element
@@ -11,4 +11,6 @@ filterContainers.forEach(function(container) {
     });
 });
 
-
+sortBtn.addEventListener('click', () => {
+    sortsContainer.classList.toggle('hidden');
+});
