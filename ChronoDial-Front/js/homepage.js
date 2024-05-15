@@ -76,3 +76,18 @@ var swiper = new Swiper(".newproductcontainer", {
       clickable: true,
     },
   });
+
+// const eachCategory = document.querySelectorAll('.eachcategoryactive');
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   eachCategory.forEach(ec => {
+//       ec.addEventListener('click', function() {
+//           ec.forEach(oec => {
+//               if (oec !== this) {
+//                   otherDiv.classList.remove('eachcategoryactive');
+//               }
+//           });
+//           this.classList.toggle('eachcategoryactive');
+//       });
+//   });
+// });

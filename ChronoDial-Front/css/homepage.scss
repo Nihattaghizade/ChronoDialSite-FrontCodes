@@ -5,61 +5,62 @@
     #slidecontainer{
         #slideinfocontainer{
             .eachslide{
+                height: 100vh;
+                width: 100vw;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 .eachslideinfo{
+                    
                     position: absolute;
                     top: 0;
                     left: 0;
-                    margin-top: 8%;
-                    margin-left: 8%;
+                    margin-top: 20%;
+                    margin-left: 10vw;
+                    width: 80vw;
 
-                    .discountinfo{
-                        color: #ffff;
-                        font-size: 12px;
-                        font-weight: 300;
-                    }
+                    // .discountinfo{
+                    //     color: #ffff;
+                    //     font-size: 12px;
+                    //     font-weight: 300;
+                    // }
     
                     .slidehead{
-                        color: #ffff;
+                        color: #fff;
                         font-size: 40px;
-                        width: 600px;
+                        width: 100%;
                     }
     
                     .slideinfo{
-                        color: #cbba9c;
+                        color: #fff;
                         font-size: 16px;
-                        line-height: 24px;
-                        font-weight: 300;
-                        width: 500px;
+                        width: 100%;
                         margin-bottom: 30px;
                     }
     
-                    .pricetext{
-                        color: #777;
-                        font-size: 16px;
-                        line-height: 24px;
-                        font-weight: 300;
-                        display: flex;
-                        align-items: center;
-                        margin-top: 10px;
-                        margin-bottom: 50px;
+                    // .pricetext{
+                    //     color: #777;
+                    //     font-size: 16px;
+                    //     line-height: 24px;
+                    //     font-weight: 300;
+                    //     display: flex;
+                    //     align-items: center;
+                    //     margin-top: 10px;
+                    //     margin-bottom: 50px;
     
-                        .price{
-                            color: #cbba9c;
-                            font-size: 30px;
-                            line-height: 24px;
-                            font-weight: 500;
-                            margin-left: 8px;
-                        }
-                    }
+                    //     .price{
+                    //         color: #cbba9c;
+                    //         font-size: 30px;
+                    //         line-height: 24px;
+                    //         font-weight: 500;
+                    //         margin-left: 8px;
+                    //     }
+                    // }
 
                     a{
                         font-size: 16px;
-                        line-height: 46px;
                         color: #ffff;
                         font-weight: 500;
                         padding: 10px 35px;
@@ -75,6 +76,14 @@
                         }
                     }
                 }
+            }
+
+            .eachslidefirst{
+                background-image: url('../image/homeslider/homesliderimage1.webp');
+            }
+
+            .eachslidesecond{
+                background-image: url('../image/homeslider/homesliderimage2.webp');
             }
         }
     }
@@ -140,6 +149,11 @@
                     border-bottom: 2px solid #9F7A49;
                 }
             }
+
+            // .eachcategoryactive{
+            //     color: #cbba9c;
+            //     border-bottom: 2px solid #9F7A49;
+            // }
          }
     }
 
@@ -165,6 +179,16 @@
                         opacity: 1;
                         visibility: visible;
                     }
+
+                    .imgbox{
+                        .main-image{
+                            display: none;
+                        }
+
+                        .hover-image{
+                            display: block;
+                        }
+                    }
                 }
 
                 .imgbox{
@@ -173,7 +197,14 @@
                     img{
                         width: 100%; 
                         height: auto; 
+                    }
+
+                    .main-image{
                         display: block;
+                    }
+
+                    .hover-image{
+                        display: none;
                     }
                 }
 
@@ -200,6 +231,7 @@
                         margin-top: 2rem;
                         display: flex;
                         align-items: center;
+                        justify-content: space-between;
                         border-bottom: 2px solid #cbba9c;
 
                         .ratingcon{
@@ -437,6 +469,16 @@
                         opacity: 1;
                         visibility: visible;
                     }
+
+                    .imgbox{
+                        .main-image{
+                            display: none;
+                        }
+
+                        .hover-image{
+                            display: block;
+                        }
+                    }
                 }
 
                 .imgbox{
@@ -445,7 +487,14 @@
                     img{
                         width: 100%; 
                         height: auto; 
+                    }
+
+                    .main-image{
                         display: block;
+                    }
+
+                    .hover-image{
+                        display: none;
                     }
                 }
 
@@ -472,6 +521,7 @@
                         margin-top: 2rem;
                         display: flex;
                         align-items: center;
+                        justify-content: space-between;
                         border-bottom: 2px solid #cbba9c;
 
                         .ratingcon{
@@ -610,6 +660,33 @@
                 flex-direction: column;
                 .pricebox{
                     margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .homeslidesection{
+        #slidecontainer{
+            #slideinfocontainer{
+                .eachslide{
+    
+                    .eachslideinfo{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin-top: 10%;
+                        margin-left: 10vw;
+                        width: 80vw;
+        
+                        .slidehead{
+                            font-size: 60px;
+                        }
+        
+                        .slideinfo{
+                            font-size: 20px;
+                            margin-bottom: 30px;
+                        }
+                    }
                 }
             }
         }

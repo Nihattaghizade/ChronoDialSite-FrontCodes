@@ -35,7 +35,7 @@
         }
     }
 }
-.ccc {
+.cartsection {
     width: 100%;
     height: auto;
     display: flex;
@@ -51,7 +51,7 @@
         justify-content: space-between;
 
         .product {
-            width: 55%;
+            width: 45%;
         }
 
         .quantity {
@@ -65,8 +65,7 @@
 
         .headrow {
             font-weight: 700;
-            font-size: 1.6rem;
-            font-family: inherit;
+            font-size: 1.4rem;
         }
 
         padding-bottom: 20px;
@@ -91,12 +90,13 @@
             // background-color: yellow;
             .imgside {
                 width: 25%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                overflow: hidden;
                 img {
                     width: 100%;
+                    height: auto;
                 }
             }
 
@@ -105,48 +105,36 @@
                 height: auto;
                 // background-color: aqua;
                 text-align: start;
-                line-height: 25px;
+                //line-height: 25px;
 
                 .brend {
                     font-size: 1rem;
-                    margin: 0;
-                    padding: 0;
-                    text-transform: uppercase;
+                    // margin: 0;
+                    // padding: 0;
+                    // text-transform: uppercase;
                     font-weight: 700;
-                    font-family: inherit;
-                    line-height: 2rem;
+                    // font-family: inherit;
+                    //line-height: 2rem;
                 }
 
                 .name {
                     font-size: 1.6rem;
                     margin: 0;
                     padding: 0;
-                    font-family: inherit;
-                    font-weight: bolder;
+                    //font-family: inherit;
+                    font-weight: 700;
                     cursor: pointer;
-                    transition: 0.1s linear;
+                    transition: 0.3s ease;
 
                     &:hover {
                         color: #CBBA9C;
-                        transition: 0.1s linear;
                     }
                 }
 
-                .price {
-                    font-size: 1.2rem;
-                    font-weight: 400;
+                .proitem{
+                    font-size: 1rem;
+                    margin-top: 1rem;
                 }
-
-                .size {
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                }
-
-                .color {
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                }
-
             }
         }
 
@@ -156,40 +144,71 @@
             width: 25%;
             display: flex;
             align-items: center;
+            gap: 15px;
 
             .count {
                 width: 50%;
+                display: flex;
 
                 // background-color: red;
-                span {
-                    padding: 10px;
-                    border: 1px solid #E8E8E8;
-                    text-align: center;
+                // span {
+                //     padding: 10px;
+                //     border: 1px solid #E8E8E8;
+                //     text-align: center;
 
-                    &:nth-child(2) {
-                        padding: 10px 15px;
-                        text-align: center;
-                    }
+                //     &:nth-child(2) {
+                //         padding: 10px 15px;
+                //         text-align: center;
+                //     }
+                // }
+                button{
+                    width: 30px;
+                    border: 1px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 0;
+                }
+
+                input{
+                    width: 40px;
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    padding-left: 15px;
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
                 }
             }
 
             .trash {
                 // background-color: yellow;
-                margin-left: 15px;
+                // margin-left: 15px;
 
-                i {
-                    padding: 10px;
-                    margin-left: 15px;
+                .trashbutton{
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     border: 2px solid #CBBA9C;
-                    color: #CBBA9C;
-                    transition: 0.1s linear;
+                    transition: 0.3s ease;
+                    i {
+                        color: #CBBA9C;
+                        transition: 0.3s ease;
+                    }
 
                     &:hover {
                         background-color: #CBBA9C;
-                        color: #fff;
-                        transition: 0.1s linear;
+                        
+                        i{
+                            color: #fff;
+                        }
                     }
                 }
+                
             }
         }
 
@@ -201,38 +220,6 @@
     }
 }
 
-
-@media only screen and (max-width:992px) {
-    .tbody {
-        .quantityside {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between !important;
-            height: 15vh;
-
-            // background-color: red;
-            .count {
-                width: 100% !important;
-
-                display: flex;
-                justify-content: center;
-            }
-
-            .trash {
-                // background-color: yellow;
-                width: 100%;
-
-                margin: 0 !important;
-                display: flex;
-                justify-content: center;
-
-                i {
-                    margin: 0 !important;
-                }
-            }
-        }
-    }
-}
 
 @media only screen and (max-width:576px) {
 
@@ -254,46 +241,38 @@
             .imgside {
                 width: 100%;
                 background-color: red;
-                width: 100% !important;
+                width: 100% ;
             }
 
             .infoside {
-                width: 100% !important;
-                text-align: center !important;
+                width: 100% ;
+                text-align: center ;
 
                 .name {
-                    font-size: 1rem !important;
+                    font-size: 1rem ;
                 }
 
                 .brend {
-                    font-size: 0.8rem !important;
+                    font-size: 0.8rem ;
                 }
 
-                .price {
-                    font-size: 0.8rem !important;
+                .proitem{
+                    font-size: 0.8rem ;
                 }
-
-                .color {
-                    font-size: 0.8rem !important;
-                }
-
-                .material {
-                    font-size: 0.8rem !important;
-                }
-
-                .size {
-                    font-size: 0.8rem !important;
-                }
-
             }
         }
 
+        // .quantityside {
+        //     .trash {
+        //         margin-top: 1rem;
+        //     }
+        // }
 
         .totalside{
-            width: 100% !important;
+            width: 100% ;
             display: flex;
             justify-content: center;
-            align-items: start !important;
+            align-items: start ;
             span{
                 font-weight: 900;
             }
@@ -301,7 +280,28 @@
     }
 }
 
-.material {
-    font-size: 1.2rem;
-    font-weight: 400;
+@media only screen and (max-width:992px) {
+    .tbody {
+        .quantityside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between ;
+            height: 15vh;
+
+            // background-color: red;
+            .count {
+                width: 100% ;
+
+                display: flex;
+                justify-content: center;
+            }
+
+            .trash {
+                // background-color: yellow;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }

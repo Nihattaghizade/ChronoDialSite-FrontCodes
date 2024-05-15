@@ -791,7 +791,7 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
 }
 @media only screen and (min-width: 992px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
   .mobile-header {
     display: none;
@@ -840,7 +840,7 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   color: #cbba9c;
 }
 
-.ccc {
+.cartsection {
   width: 100%;
   height: auto;
   display: flex;
@@ -849,7 +849,7 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   justify-content: center;
   padding: 8rem 0;
 }
-.ccc .thead {
+.cartsection .thead {
   width: 70%;
   display: flex;
   align-items: center;
@@ -857,29 +857,28 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   padding-bottom: 20px;
   border-bottom: 1px solid #000;
 }
-.ccc .thead .product {
-  width: 55%;
+.cartsection .thead .product {
+  width: 45%;
 }
-.ccc .thead .quantity {
+.cartsection .thead .quantity {
   width: 20%;
 }
-.ccc .thead .total {
+.cartsection .thead .total {
   width: 15%;
   text-align: end;
 }
-.ccc .thead .headrow {
+.cartsection .thead .headrow {
   font-weight: 700;
-  font-size: 1.6rem;
-  font-family: inherit;
+  font-size: 1.4rem;
 }
-.ccc .tbody {
+.cartsection .tbody {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 70%;
   margin-top: 50px;
 }
-.ccc .tbody .productside {
+.cartsection .tbody .productside {
   margin-top: 30px;
   width: 50%;
   height: auto;
@@ -887,116 +886,93 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   justify-content: space-between;
   align-items: center;
 }
-.ccc .tbody .productside .imgside {
+.cartsection .tbody .productside .imgside {
   width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
-.ccc .tbody .productside .imgside img {
+.cartsection .tbody .productside .imgside img {
   width: 100%;
+  height: auto;
 }
-.ccc .tbody .productside .infoside {
+.cartsection .tbody .productside .infoside {
   width: 70%;
   height: auto;
   text-align: start;
-  line-height: 25px;
 }
-.ccc .tbody .productside .infoside .brend {
+.cartsection .tbody .productside .infoside .brend {
   font-size: 1rem;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
   font-weight: 700;
-  font-family: inherit;
-  line-height: 2rem;
 }
-.ccc .tbody .productside .infoside .name {
+.cartsection .tbody .productside .infoside .name {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
-  font-family: inherit;
-  font-weight: bolder;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.1s linear;
+  transition: 0.3s ease;
 }
-.ccc .tbody .productside .infoside .name:hover {
+.cartsection .tbody .productside .infoside .name:hover {
   color: #CBBA9C;
-  transition: 0.1s linear;
 }
-.ccc .tbody .productside .infoside .price {
-  font-size: 1.2rem;
-  font-weight: 400;
+.cartsection .tbody .productside .infoside .proitem {
+  font-size: 1rem;
+  margin-top: 1rem;
 }
-.ccc .tbody .productside .infoside .size {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.ccc .tbody .productside .infoside .color {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.ccc .tbody .quantityside {
+.cartsection .tbody .quantityside {
   margin: 30px;
   width: 25%;
   display: flex;
   align-items: center;
+  gap: 15px;
 }
-.ccc .tbody .quantityside .count {
+.cartsection .tbody .quantityside .count {
   width: 50%;
+  display: flex;
 }
-.ccc .tbody .quantityside .count span {
-  padding: 10px;
-  border: 1px solid #E8E8E8;
-  text-align: center;
+.cartsection .tbody .quantityside .count button {
+  width: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
 }
-.ccc .tbody .quantityside .count span:nth-child(2) {
-  padding: 10px 15px;
-  text-align: center;
+.cartsection .tbody .quantityside .count input {
+  width: 40px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-left: 15px;
 }
-.ccc .tbody .quantityside .trash {
-  margin-left: 15px;
+.cartsection .tbody .quantityside .count input::-webkit-outer-spin-button,
+.cartsection .tbody .quantityside .count input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-.ccc .tbody .quantityside .trash i {
-  padding: 10px;
-  margin-left: 15px;
+.cartsection .tbody .quantityside .trash .trashbutton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #CBBA9C;
+  transition: 0.3s ease;
+}
+.cartsection .tbody .quantityside .trash .trashbutton i {
   color: #CBBA9C;
-  transition: 0.1s linear;
+  transition: 0.3s ease;
 }
-.ccc .tbody .quantityside .trash i:hover {
+.cartsection .tbody .quantityside .trash .trashbutton:hover {
   background-color: #CBBA9C;
-  color: #fff;
-  transition: 0.1s linear;
 }
-.ccc .tbody .totalside {
+.cartsection .tbody .quantityside .trash .trashbutton:hover i {
+  color: #fff;
+}
+.cartsection .tbody .totalside {
   margin-top: 30px;
   width: 15%;
   text-align: end;
 }
 
-@media only screen and (max-width: 992px) {
-  .tbody .quantityside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between !important;
-    height: 15vh;
-  }
-  .tbody .quantityside .count {
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-  }
-  .tbody .quantityside .trash {
-    width: 100%;
-    margin: 0 !important;
-    display: flex;
-    justify-content: center;
-  }
-  .tbody .quantityside .trash i {
-    margin: 0 !important;
-  }
-}
 @media only screen and (max-width: 576px) {
   .thead .total {
     display: none;
@@ -1013,41 +989,46 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   .tbody .productside .imgside {
     width: 100%;
     background-color: red;
-    width: 100% !important;
+    width: 100%;
   }
   .tbody .productside .infoside {
-    width: 100% !important;
-    text-align: center !important;
+    width: 100%;
+    text-align: center;
   }
   .tbody .productside .infoside .name {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
   .tbody .productside .infoside .brend {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
   }
-  .tbody .productside .infoside .price {
-    font-size: 0.8rem !important;
-  }
-  .tbody .productside .infoside .color {
-    font-size: 0.8rem !important;
-  }
-  .tbody .productside .infoside .material {
-    font-size: 0.8rem !important;
-  }
-  .tbody .productside .infoside .size {
-    font-size: 0.8rem !important;
+  .tbody .productside .infoside .proitem {
+    font-size: 0.8rem;
   }
   .tbody .totalside {
-    width: 100% !important;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: start !important;
+    align-items: start;
   }
   .tbody .totalside span {
     font-weight: 900;
   }
 }
-.material {
-  font-size: 1.2rem;
-  font-weight: 400;
+@media only screen and (max-width: 992px) {
+  .tbody .quantityside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15vh;
+  }
+  .tbody .quantityside .count {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .tbody .quantityside .trash {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=cartpage.css.map */

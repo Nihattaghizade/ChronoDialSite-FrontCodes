@@ -58,3 +58,26 @@ menuConPageBoxInner.forEach( (e) => {
         pageList.classList.toggle("hidden");
     });
 });
+
+
+
+// const decreaseBtn = document.querySelectorAll('.decreasebtn');
+// const increaseBtn = document.querySelectorAll('.increasebtn');
+// const counter = document.getElementById('counter');
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const decreaseBtn = document.querySelectorAll('.decreasebtn');
+    const increaseBtn = document.querySelectorAll('.increasebtn');
+    const counterInput = document.querySelectorAll('.counter');
+
+    increaseBtn.addEventListener('click', () => {
+        counterInput.value = parseInt(counterInput.value) + 1;
+    });
+
+    decreaseBtn.addEventListener('click', () => {
+        let currentValue = parseInt(counterInput.value);
+        if (currentValue > 0) {
+            counterInput.value = currentValue - 1;
+        }
+    });
+});

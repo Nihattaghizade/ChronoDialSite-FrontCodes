@@ -769,11 +769,6 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   color: #000;
 }
 
-@media only screen and (min-width: 440px) {
-  .basketcontainer {
-    width: 400px;
-  }
-}
 @media only screen and (min-width: 576px) {
   .mobile-header {
     display: none;
@@ -790,10 +785,13 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   .searchsection .searchcontainer .inputcontainer input {
     height: 43px;
   }
+  .basketcontainer {
+    width: 550px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
   .mobile-header {
     display: none;
@@ -818,6 +816,8 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   z-index: -100;
 }
 .homeslidesection #slidecontainer #slideinfocontainer .eachslide {
+  height: 100vh;
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -827,47 +827,23 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 8%;
-  margin-left: 8%;
-}
-.homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .discountinfo {
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
+  margin-top: 20%;
+  margin-left: 10vw;
+  width: 80vw;
 }
 .homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .slidehead {
-  color: white;
+  color: #fff;
   font-size: 40px;
-  width: 600px;
+  width: 100%;
 }
 .homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .slideinfo {
-  color: #cbba9c;
+  color: #fff;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  width: 500px;
+  width: 100%;
   margin-bottom: 30px;
-}
-.homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .pricetext {
-  color: #777;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-.homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .pricetext .price {
-  color: #cbba9c;
-  font-size: 30px;
-  line-height: 24px;
-  font-weight: 500;
-  margin-left: 8px;
 }
 .homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo a {
   font-size: 16px;
-  line-height: 46px;
   color: white;
   font-weight: 500;
   padding: 10px 35px;
@@ -880,6 +856,12 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   color: #fff;
   background-color: #cbba9c;
   border: 2px solid #cbba9c;
+}
+.homeslidesection #slidecontainer #slideinfocontainer .eachslidefirst {
+  background-image: url("../image/homeslider/homesliderimage1.webp");
+}
+.homeslidesection #slidecontainer #slideinfocontainer .eachslidesecond {
+  background-image: url("../image/homeslider/homesliderimage2.webp");
 }
 .homeslidesection .swiper-pagination-bullet {
   width: 14px;
@@ -961,6 +943,12 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   opacity: 1;
   visibility: visible;
 }
+.productcategorysection .result-container .eachcategory-productcontainer .eachproduct:hover .imgbox .main-image {
+  display: none;
+}
+.productcategorysection .result-container .eachcategory-productcontainer .eachproduct:hover .imgbox .hover-image {
+  display: block;
+}
 .productcategorysection .result-container .eachcategory-productcontainer .eachproduct .imgbox {
   width: 100%;
   overflow: hidden;
@@ -968,7 +956,12 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
 .productcategorysection .result-container .eachcategory-productcontainer .eachproduct .imgbox img {
   width: 100%;
   height: auto;
+}
+.productcategorysection .result-container .eachcategory-productcontainer .eachproduct .imgbox .main-image {
   display: block;
+}
+.productcategorysection .result-container .eachcategory-productcontainer .eachproduct .imgbox .hover-image {
+  display: none;
 }
 .productcategorysection .result-container .eachcategory-productcontainer .eachproduct .productinfobox {
   padding: 0 1rem;
@@ -991,6 +984,7 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   margin-top: 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid #cbba9c;
 }
 .productcategorysection .result-container .eachcategory-productcontainer .eachproduct .productinfobox .productfeatures .ratingcon {
@@ -1190,6 +1184,12 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   opacity: 1;
   visibility: visible;
 }
+.newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct:hover .imgbox .main-image {
+  display: none;
+}
+.newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct:hover .imgbox .hover-image {
+  display: block;
+}
 .newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct .imgbox {
   width: 100%;
   overflow: hidden;
@@ -1197,7 +1197,12 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
 .newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct .imgbox img {
   width: 100%;
   height: auto;
+}
+.newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct .imgbox .main-image {
   display: block;
+}
+.newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct .imgbox .hover-image {
+  display: none;
 }
 .newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct .productinfobox {
   padding: 0 1rem;
@@ -1220,6 +1225,7 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   margin-top: 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid #cbba9c;
 }
 .newproductsection .newproductcontainer .newproductcontainerwrapper .eachproduct .productinfobox .productfeatures .ratingcon {
@@ -1316,6 +1322,21 @@ footer .sharewithuscontainer .socialnetworks a:hover i {
   }
   .eachproduct .productinfobox .productfeatures .pricebox {
     margin-top: 1rem;
+  }
+  .homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  .homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .slidehead {
+    font-size: 60px;
+  }
+  .homeslidesection #slidecontainer #slideinfocontainer .eachslide .eachslideinfo .slideinfo {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {

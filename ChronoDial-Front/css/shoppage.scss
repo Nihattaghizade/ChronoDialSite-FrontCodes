@@ -430,6 +430,16 @@
                             opacity: 1;
                             visibility: visible;
                         }
+
+                        .imgbox{
+                            .main-image{
+                                display: none;
+                            }
+    
+                            .hover-image{
+                                display: block;
+                            }
+                        }
                     }
     
                     .imgbox{
@@ -438,7 +448,14 @@
                         img{
                             width: 100%; 
                             height: auto; 
+                        }
+
+                        .main-image{
                             display: block;
+                        }
+
+                        .hover-image{
+                            display: none;
                         }
                     }
     
